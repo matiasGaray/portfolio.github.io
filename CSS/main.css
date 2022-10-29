@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family:Helvetica, sans-serif;
+    overflow-x: hidden;
+    max-width: 1100px;
+    background-color: #fff;
+}
+
+main{
+    padding-top: 4.5em;
+}
+
+.top{
+    width: 100vw;
+    height: 16vh;
+}
+
+.texto_arriba{
+    text-align: center;
+    padding: .5em;
+    color: #141c3a;
+    font-size: 3rem;
+}
+
+.texto_abajo{
+    font-size: 1.5rem;
+    color: #2C2C2C;
+    text-align: center;
+}
+
+.img img{
+    width: 100vw;
+    height: 350px;
+    margin-right: 1.5em;
+    margin-left: -.7em;
+    z-index: 20;
+}
+
+.contenido{
+    width: 100%;
+    margin: 1em;
+    padding-top: 1em;
+}
+
+.boton{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.cv{
+    padding: 1em;
+    background: #fff;
+    border-radius: 2%;
+    transition: .3s;
+    cursor: pointer;
+    margin: 0 auto;
+    box-shadow: 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.cv a{
+    text-decoration: none;
+    color: rgb(27, 27, 27);
+    padding: 1em 3em;
+    width: 100%;
+}
+
+.cv:hover{
+    background-color: rgb(27, 27, 27);
+    color: #f7f7f7;
+    box-shadow: none;
+}
+
+.cv a:hover{
+    color: #f7f7f7;
+    padding: 0 3em;
+}
+
+.separador{
+    width: 50vw;
+    height: 2px;
+    background-color: #fff;
+    margin-top: 2em;
+    margin-left: 15em;
+    margin-bottom: 3em;
+}
+
+@media screen and (max-width: 858px) {
+    body{
+        overflow-x: hidden;
+        min-width: 350px;
+    }
+
+    .texto_arriba{
+        font-size: 2rem;
+        padding-top: 1.5em;
+    }
+
+    .texto_abajo{
+        font-size: 1rem;
+    }
+
+    .img img{
+        width: 100%;
+        height: 300px;
+    }
+
+    .separador{
+        display: none;
+    }
+
+    .cv{
+        background-color: rgb(27, 27, 27);
+        box-shadow: none;
+        border: none;
+    }
+
+    .cv a{
+        color: #f7f7f7; 
+    }
+
+}
+
+footer{
+    background-color: rgb(27, 27, 27);
+    color: #f5f5f5;
+    text-align: center;
+}
+footer h2,h3,h5{
+    padding: 10px;
+}

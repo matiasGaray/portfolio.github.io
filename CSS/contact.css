@@ -1,0 +1,45 @@
+.contact-container h1{
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: .5em;
+    color: #141c3a;
+}
+
+.contact-container h3{
+    text-align: center;
+    margin-bottom: 4em;
+    color: rgba(39, 39, 39, 0.747);
+}
+
+.contact-cards{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    margin-left: 3em;
+    margin-bottom: 5em;
+}
+
+.contact{
+    display: flex;
+    width: 150px;
+    height: 100px;
+    align-items: center;
+    text-align: center;
+}
+
+.contact figure{
+    font-size: 6rem;
+    margin-left: .2em;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.contact figure:hover{
+    transform: scale(1.2);
+}
+
+@media screen and (max-width: 858px){
+    .contact-cards{
+        grid-template-columns: repeat(2, 1fr);
+}
+}

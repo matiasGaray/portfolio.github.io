@@ -1,0 +1,64 @@
+.habilidades{
+    width: 100%;
+    height: 80vh;
+    border: none;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.habilidades ul li h3{
+    color: #141c3a;
+}
+
+.soft-skills{
+    padding-left: 10em;
+}
+
+.soft-skills li{
+    font-size: 1.3rem;
+    color: #2C2C2C;
+    line-height: 2.5rem;
+}
+
+.hard-skills{
+    padding-left: 8em;
+}
+
+.hard-skills li{
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+}
+
+.habilidades ul li{
+    list-style:none;
+}
+
+
+@media screen and (max-width: 858px){
+    .habilidades{
+        padding-top: -3em;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .soft-skills{
+        padding-left: 2em;
+    }
+
+    .hard-skills{
+        padding-left: 2em;
+    }
+}   
+
+@media screen and (min-width: 300px){
+    .habilidades{
+        margin-top: 6em;
+    }
+
+    .soft-skills li{
+        line-height: 1.5em;
+    }
+
+    .hard-skills li{
+        line-height: 1.5em;
+    }
+}

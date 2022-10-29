@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'Anurati';
+    src: url(anurati_font/Anurati-Regular.otf);
+}
+
+.menu{
+    height: 75px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, .6);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background-color: #fff;
+}
+
+.logo{
+    font-family: 'Anurati';
+    padding-left: 2em;
+    font-size: 30px;
+}
+
+.logo a{
+    text-decoration: none;
+    color: rgb(27, 27, 27);
+}
+
+.menu-items{
+    display: flex;
+    list-style: none;
+    margin-right: 30px;
+}
+
+.menu-items li{
+    border-radius: 3px;
+    margin: 0 5px;
+    transition: .5s;
+}
+
+.menu-items li:hover{
+    background-color: rgb(27, 27, 27);
+    padding: .5em;
+}
+
+.menu-items li a:hover{
+    color: #fff;
+}
+
+.menu-items li a{
+    padding: 7px 13px;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    text-transform: uppercase;
+    color: black;
+}
+
+.menu-icon{
+    margin-right: 30px;
+    font-size: 25px;
+    color: black;
+    cursor: pointer;
+    display: none;
+}
+
+ul.show{
+    top: 65px;
+}
+
+@media screen and (max-width: 952px){
+    .logo{
+        font-size: 30px;
+        padding-left: 20px;
+    }
+
+    .menu-items li a{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 858px){
+    .menu{
+        height: 65px;
+    }
+
+    .menu-icon{
+        display: inline-flex;
+        color: #000;
+    }
+
+    .menu-items{
+        position: fixed;
+        width: 100vw;
+        height: calc(100%-65px);
+        background-color: rgb(27, 27, 27);
+        top: -100vh;
+        text-align: center;
+        transition: all .4s;
+        flex-direction: column;
+    }
+
+    .menu-items li{
+        margin: 30px 0 0 0;
+        line-height: 30px;
+    }
+
+    .menu-items:hover{
+        background: none;
+    }
+
+    .menu-items li a{
+        font-size: 20px;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    .logo{
+        font-size: 25px;
+        padding-left: 1.5em;
+    }
+
+}
+
+@media screen and (max-width: 858px) and (orientation: landscape){
+    .menu-items li{
+        margin: 5px 0 0 0;
+    }
+
+    .menu-items{
+        overflow: scroll;
+        height: calc(100% - 65px);
+    }
+}
